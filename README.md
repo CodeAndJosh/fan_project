@@ -59,11 +59,11 @@ Outlet --> Button --> PI Controller --> PWM --> Motor Driver --> DC Motor --> Sp
 
 The controller compares data from the sensor with the active mode's speed setpoint:
 
-/[e[k] = \omega_{\text{ref}}[k] - /omega[k]/]
+$$ e[k] = \omega_{\mathrm{ref}}[k] - \omega[k] $$
 
 A discrete PI controller calculates the motor command:
 
-\[u[k] = K<sub>p </sub e[k] + K<sub>i T<sub>s</sub> \sum e[k]/]
+$$ u[k] = K_p e[k] + K_i T_s \sum_{j=0}^{k} e[j] $$
 
 ## Firmware (WIP)
 
