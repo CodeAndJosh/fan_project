@@ -99,10 +99,14 @@ This product contains hazardous AC mains voltage
 
 ## Repository Structure
 
-'''text
 hardware/      Schematics, PCB files, and BOM
+
 firmware/      Embedded source code
+
 simulation/    Plant and controller models
+
 mechanical/    Enclosure and assembly files
+
 tests/         Test procedures and recorded data
+
 docs/          Images, Plots, and design notes
