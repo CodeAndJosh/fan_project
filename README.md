@@ -37,4 +37,4 @@ Build a small table fan with a PI Controller to control the motor's speed
 
 ## Architecture
 
-Button --> PI Controller --> PWM --> Motor Driver --> DC Motor --> Speed Sensor --> Controller
+Outlet --> Button --> PI Controller --> PWM --> Motor Driver --> DC Motor --> Speed Sensor --> Controller
