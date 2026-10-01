@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="DK1g6VXBJytfGh4Iv83i">
-    <mxGraphModel dx="624" dy="388" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="710" dy="388" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -96,9 +96,6 @@
         <mxCell id="nPIdZRa3C5mJGfzYA6Im-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;horizontal=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;5V&lt;/font&gt;" vertex="1">
           <mxGeometry height="15" width="18" x="690" y="103" as="geometry" />
         </mxCell>
-        <mxCell id="nPIdZRa3C5mJGfzYA6Im-78" edge="1" parent="1" source="nPIdZRa3C5mJGfzYA6Im-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="nPIdZRa3C5mJGfzYA6Im-77">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="nPIdZRa3C5mJGfzYA6Im-81" edge="1" parent="1" source="nPIdZRa3C5mJGfzYA6Im-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nPIdZRa3C5mJGfzYA6Im-80">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -142,21 +139,41 @@
         <mxCell id="nPIdZRa3C5mJGfzYA6Im-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Motor Driver" vertex="1">
           <mxGeometry height="30" width="70" x="837" y="243" as="geometry" />
         </mxCell>
-        <mxCell id="nPIdZRa3C5mJGfzYA6Im-79" edge="1" parent="1" source="nPIdZRa3C5mJGfzYA6Im-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="nPIdZRa3C5mJGfzYA6Im-56">
+        <mxCell id="rkHpl_uet-oV5a-Cakhy-8" edge="1" parent="1" source="nPIdZRa3C5mJGfzYA6Im-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="nPIdZRa3C5mJGfzYA6Im-56">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="943" y="80" />
-              <mxPoint x="944" y="80" />
-              <mxPoint x="944" y="65" />
+              <mxPoint x="1015" y="64" />
+              <mxPoint x="936" y="64" />
+              <mxPoint x="936" y="63" />
             </Array>
-            <mxPoint x="976" y="40" as="targetPoint" />
+            <mxPoint x="1008" y="56" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nPIdZRa3C5mJGfzYA6Im-77" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=middle;align=center;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Speed Sensor&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="30" x="928" y="95.5" as="geometry" />
+          <mxGeometry height="30" width="30" x="1000" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="rkHpl_uet-oV5a-Cakhy-7" edge="1" parent="1" source="nPIdZRa3C5mJGfzYA6Im-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1016" y="144" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="nPIdZRa3C5mJGfzYA6Im-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fan" vertex="1">
           <mxGeometry height="26" width="30" x="958" y="207.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rkHpl_uet-oV5a-Cakhy-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;horizontal=0;rotation=90;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Signal&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="18" x="726" y="41" as="geometry" />
+        </mxCell>
+        <mxCell id="rkHpl_uet-oV5a-Cakhy-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;horizontal=0;rotation=180;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Control Signal&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="18" x="850" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="rkHpl_uet-oV5a-Cakhy-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;horizontal=0;rotation=90;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Electrical Signal&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="18" x="919" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rkHpl_uet-oV5a-Cakhy-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;horizontal=0;rotation=-180;" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Electromagnetic Feedback&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="18" x="1024" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rkHpl_uet-oV5a-Cakhy-13" edge="1" parent="1" source="rkHpl_uet-oV5a-Cakhy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="rkHpl_uet-oV5a-Cakhy-12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
