@@ -1,3 +1,7 @@
+# Major assumptions
+
+# Electrical/Power feasibility
+
 # Motor feasibility
 
 The mechanical power of rotating system is:
@@ -33,3 +37,7 @@ Given varying scenarios for electrical power based on power rating
 | 12V 3A | 36W | 0.138 N*m |
 | 12V 2A | 24W | 0.917 N*m |
 | 5V 3A | 15W | 0.057 N*m |
+
+# Firmware feasability
+
+# Control feasability
