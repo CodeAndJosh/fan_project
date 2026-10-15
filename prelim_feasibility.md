@@ -100,15 +100,18 @@ Types of motors:
   - High RPM potential
   - Compact size and lightweight design
   - Low torque output
+  - Fast response, acceleration, and deceleration
 
-Assessment: For our use case, inrunner motor's high speed, lightweight design isn't valuable and its high power usage is problematic
+Assessment: An inrunner motor allows us to potentially run our fan at higher RPMs. Yet, with our current target RPM, it doesn't seem as important. Its high precision control and high dynamic response could also be useful
   
 - Outrunner motors
-  - High torque output
+  - High low-end torque output
   - Larger diameter
-  - Efficient cooling
+  - Lower maximum RPM
 
-Assessment:
+Assessment: Depending on torque-speed curve, outrunner motors could be the better option. A high low-end torque output allows us to rotate the fan's blades at a small RPM for not a lot of power. However, its typically used for applications involving heavy-load equipment.
+
+Source: https://www.dmkmotor.com/inrunner-vs-outrunner-bldc-motor/#Key_Difference_Between_Inrunner_and_Outrunner_BLDC_Motor%EF%BC%9A
 
 - Star connection
   - Lower current draw
@@ -125,6 +128,24 @@ Assessment:
 Assessment:
 
 Source: https://arshon.com/blog/types-of-bldc-motors-and-controllers-a-complete-guide-for-engineers/
+
+- Brushed motors
+  -  Lower initial cost
+  -  Easy to operate and control
+  -  Susceptible to wear
+  -  High maintenance
+
+Assessment: Brushed DC motors offer a cost-effective, easier solution to our fan. This makes it practical for a small personal project despite its downsides. Also removes the need for a driver
+
+- Brushless motors
+  -  High efficiency
+  -  Flexible speed control
+  -  Complex control
+  -  High initial cost
+
+Assessment: Brushless DC motors are better long term. Yet it's high initial cost makes it iffy
+
+Source: https://www.dmkmotor.com/brushed-vs-brushless-dc-motor/
 
 # Firmware feasability
 
