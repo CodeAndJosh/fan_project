@@ -54,6 +54,8 @@ Possible action: Use external BLDC drive module for proof of concept prototyping
 
 # Motor feasibility
 
+## Motor power calculations
+
 The mechanical power of rotating system is:
 
 $$ P_{\mathrm{mech}} = \tau \omega $$
@@ -90,13 +92,47 @@ Given varying scenarios for electrical power based on power rating
 | 12V 1A | 12W | 0.046 N*m |
 | 5V 3A | 15W | 0.057 N*m |
 
+## Motor comparisons
+
+Types of motors:
+
+- Inrunner motors
+  - High RPM potential
+  - Compact size and lightweight design
+  - Low torque output
+
+Assessment: For our use case, inrunner motor's high speed, lightweight design isn't valuable and its high power usage is problematic
+  
+- Outrunner motors
+  - High torque output
+  - Larger diameter
+  - Efficient cooling
+
+Assessment:
+
+- Star connection
+  - Lower current draw
+  - Higher torque at lower speeds
+  - Improved protection against overheating
+
+Assessment:
+
+- Delta connection
+  -  Higher current flow
+  -  suited for high-speed performance
+  -  Less protection from overheating
+
+Assessment:
+
+Source: https://arshon.com/blog/types-of-bldc-motors-and-controllers-a-complete-guide-for-engineers/
+
 # Firmware feasability
 
 To toggle between different speed modes, use a finite state machine.
 
 Reference speed is set based on current state
 
-| Current State | Next State | Reference RPM }
+| Current State | Next State | RPM Setpoint |
 | --- | --- | --- |
 | Off | Low | 0 RPM |
 | Low | Med | 900 RPM |
@@ -104,3 +140,64 @@ Reference speed is set based on current state
 | High | Off | 1800 RPM |
 
 # Control feasability
+
+Closed-loop control requires feedback data, we will use a speed sensor to provide that feedback data
+
+Types of speed sensors:
+
+- Hall effect based sensor
+  - Cost-effective
+  - Reliable commutation signals
+  - Fast response time
+  - Great low-speed performance
+  - Temperature sensitive
+  - Sensitive to EMI
+  - Requires power supply
+
+Assessment: If we need a sensor, a Hall effect based sensor is a good option as an accurate and cost-effective solution. We could account for temperature using a heat sink
+
+- Optical encoder
+  - Precise angular resolution
+  - Immune to EMI
+  - Minimal noise distortion
+  - Higher current consumption
+
+Assessment: Despite its reliable accuracy, its high current consumption makes it not ideal for a sensor. Additionally, its high cost makes it not ideal for a first prototype
+
+- Magnetic resolver
+  - High reliability in noisy environments
+  - Temperature resistive
+  - Compact and cost effective
+  - Less precise
+  - Sensitive to EMI
+  - Requires careful mechanical alignment
+
+Assessment: The lack of reliable accuracy in a magnetic encoder is worrying yet manageable. However its high cost makes it not ideal for a first prototype
+
+- Sensorless back-EMF
+  - Lower cost and simpler construction
+  - More compact PCB design
+  - Higher reliability
+  - Poor startup performance
+  - Advanced algorithms required for precision
+
+Assessment: Despites its disadvantages, a sensorless controller allows for a simple, compact, low-cost solution. Due to its poor startup performance, an extra open-loop sequence should be added. Depending on value of back EMF @ 900 RPM, we should either increase low-mode RPM or use a sensor
+
+Source: https://arshon.com/blog/types-of-bldc-motors-and-controllers-a-complete-guide-for-engineers/
+
+Types of controller algoriths:
+
+- Field-Oriented Control
+  -
+
+Assessment:
+
+- Extended Kalman Filter
+  -
+
+Assessment:
+
+- Sliding Mode Observers
+  -
+
+Assessment:
